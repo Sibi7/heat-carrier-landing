@@ -1,8 +1,9 @@
-.clearfix{
+.clearfix {
   overflow: hidden;
   clear: both;
 }
-.feedback-btn{
+
+.feedback-btn {
   padding: 12px 23px;
   border-radius: 10px;
   background-color: #e2261d;
@@ -14,8 +15,15 @@
   font-weight: 400;
   text-transform: uppercase;
   transition: 200ms ease;
-  &:hover{
+  &:hover {
     transition: 200ms ease;
     background: darken(#e2261d, 10%);
   }
+}
+
+.mgt-25 {
+  margin-top: 25px;
+}
+.mgb-25{
+  margin-bottom: 25px;
 }
