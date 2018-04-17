@@ -2,11 +2,13 @@
   float: left;
   width: 100%;
   position: relative;
+  background-color: #f7f6f6;
   &__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 45px;
+    margin-bottom: 45px;
   }
   &__logo {
     color: #1b1b1b;
@@ -55,22 +57,74 @@
       font-size: 13px;
     }
   }
-  &__feedback-btn{
-    width: 166px;
-    height: 33px;
-    border-radius: 10px;
-    background-color: #e2261d;
-    border: 0;
-    text-shadow: 1px 1px 3px rgba(29, 29, 29, 0.7);
-    color: #ffffff;
-    font-family: $latoBlack;
-    font-size: 12px;
-    font-weight: 400;
+  &__slider{
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    width: 100%;
+  }
+  &__slider-wrap{
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-left: 60px;
+  }
+  &__title{
+    width: 435px;
+    color: #1b1b1b;
+    font-family: $ProxNExBold;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    transition: 200ms ease;
-    &:hover{
-      transition: 200ms ease;
-      background: darken(#e2261d, 10%);
+  }
+  &__desc{
+    width: 551px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    color: #1b1b1b;
+    font-size: 19px;
+    line-height: 21px;
+  }
+  &__advantage{
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+    img{
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      display: inline-block;
+      float: left;
     }
+    h4{
+      margin: 0;
+      color: #1b1b1b;
+      font-family: $latoBlack;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    p{
+      margin: 0;
+      width: 200px;
+      color: #1b1b1b;
+      font-size: 15px;
+    }
+  }
+  &__advantage-wrap{
+    display: inline-block;
+    margin-left: 15px;
+    float: left;
+  }
+  &__img-absolute{
+    width: 837px;
+    height: 595px;
+    position: absolute;
+    top: 0;
+    right: -140px;
+    background: url("../img/1.png") no-repeat center right;
+    background-size: contain;
   }
 }
