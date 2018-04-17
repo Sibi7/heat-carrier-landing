@@ -2,6 +2,7 @@ $latoBlack: 'Lato-Black';
 $latoBold: 'Lato-Bold';
 $latoSemmiBold: 'Lato-SemmiBold';
 $latoRegular: 'Lato-Regular';
+$latoMedium: 'Lato-Medium';
 $latoLight: 'Lato-Light';
 $ProxNExBold: 'proxima-nova-extrabold';
 
@@ -34,6 +35,12 @@ $ProxNExBold: 'proxima-nova-extrabold';
   font-family: 'Lato-Regular';
   src: url('../fonts/lato/LatoRegular.woff') format('woff'),
   url('../fonts/lato/LatoRegular.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('../fonts/lato/LatoMedium.woff') format('woff'),
+  url('../fonts/lato/LatoMedium.woff2') format('woff2');
   font-weight: normal;
 }
 @font-face {
