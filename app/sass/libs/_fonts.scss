@@ -1,5 +1,44 @@
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-//@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
-//@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+$latoBlack: 'Lato-Black';
+$latoBold: 'Lato-Bold';
+$latoSemmiBold: 'Lato-SemmiBold';
+$latoRegular: 'Lato-Regular';
+$latoLight: 'Lato-Light';
+$ProxNExBold: 'proxima-nova-extrabold';
+
+
+@font-face {
+  font-family: 'proxima-nova-extrabold';
+  src: url('../fonts/proxima-nova/proxima-nova-extrabold.woff') format('woff'),
+  url('../fonts/proxima-nova/proxima-nova-extrabold.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/lato/LatoBlack.woff') format('woff'),
+  url('../fonts/lato/LatoBlack.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/lato/LatoBold.woff') format('woff'),
+  url('../fonts/lato/LatoBold.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-SemmiBold';
+  src: url('../fonts/lato/LatoRegular.woff2') format('woff'),
+  url('../fonts/lato/LatoRegular.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/lato/LatoRegular.woff') format('woff'),
+  url('../fonts/lato/LatoRegular.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/lato/LatoLight.woff') format('woff'),
+  url('../fonts/lato/LatoLight.woff2') format('woff2');
+  font-weight: normal;
+}
