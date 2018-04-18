@@ -24,9 +24,21 @@
       margin-top: 30px;
     }
   }
+  &__warning {
+    text-align: center;
+    color: #1b1b1b;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 30px 0 40px 0;
+    span {
+      color: #fd2a43;
+    }
+  }
   &__table {
     width: 943px;
     margin: 0 auto;
+    box-shadow: 0 0 49px rgba(65, 65, 65, 0.31);
+    border-radius: 10px 10px 10px 10px;
     thead {
       line-height: 45px;
       display: table;
@@ -36,33 +48,113 @@
       background-color: #e2261d;
       color: #ffffff;
       font-size: 14px;
-      tr{
-        td{
+      .table-center {
+        background-color: #e74038;
+        box-shadow: 0 0 49px rgba(65, 65, 65, 0.2);
+      }
+      tr {
+        td {
           width: 33.33%;;
         }
       }
     }
-    tbody{
+    tbody {
+
       display: table;
       width: 100%;
       text-align: center;
-      tr{
-        &:nth-child(2n+1){
+      .table-center {
+        background: #fff;
+      }
+      tr {
+        &:nth-child(2n) {
           background-color: #f8f6f6;
         }
-        td{
+        td {
           width: 33.33%;
-          padding: 13px 60px;
+          padding: 13px 50px;
           color: #1b1b1b;
           font-size: 14px;
           line-height: 17px;
         }
       }
     }
-    tfoot{
+    tfoot {
       display: table;
       width: 100%;
       text-align: center;
+      border-radius: 0 0 10px 10px;
+      .table-center {
+        background: #fff;
+      }
+      tr {
+        background-color: #f8f6f6;
+        td {
+          width: 33.33%;
+          vertical-align: top;
+          padding: 20px 50px;
+
+        }
+      }
     }
   }
+
+  //&__table-wrap{
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  width: 943px;
+  //  margin: 0 auto;
+  //}
+  //&__table-content{
+  //  display: flex;
+  //  align-items: center;
+  //  width: 943px;
+  //  margin: 0 auto;
+  //}
+  //&__table-item{
+  //  display: flex;
+  //  justify-content: center;
+  //  align-items: center;
+  //  padding: 15px 47px;
+  //  &:nth-child(2n+1){
+  //    background: #f8f6f6;
+  //  }
+  //}
+  //&__table-left, &__table-right{
+  //  width: 340px;
+  //}
+  //&__table-head-left{
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  height: 45px;
+  //  border-radius: 10px 0 0 0;
+  //  background-color: #e2261d;
+  //  color: #ffffff;
+  //  font-size: 14px;
+  //}
+  //&__table-head-center{
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  height: 45px;
+  //  box-shadow: 0 0 49px rgba(65, 65, 65, 0.2);
+  //  background-color: #e74038;
+  //  color: #ffffff;
+  //  font-size: 14px;
+  //}
+  //&__table-head-right{
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  height: 45px;
+  //  border-radius: 0 10px 0 0;
+  //  background-color: #e2261d;
+  //  color: #ffffff;
+  //  font-size: 14px;
+  //}
+  //&__table-center{
+  //  width: calc(100% - 680px);
+  //}
+
 }
