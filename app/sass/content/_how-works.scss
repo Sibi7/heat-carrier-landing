@@ -1,0 +1,78 @@
+.how-works{
+  float: left;
+  width: 100%;
+  position: relative;
+  &__head{
+    width: 100%;
+    position: relative;
+    float: left;
+    background-color: #efeeee;
+    padding: 35px 0;
+  }
+  &__wrap{
+    display: block;
+    position: relative;
+    float: left;
+    padding-left: 104px;
+  }
+  &__desk{
+    width: 761px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
+
+  }
+  &__title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #1b1b1b;
+    font-family: $latoBlack;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__absolute{
+    position: absolute;
+    width: 270px;
+    height: 235px;
+    right: 25px;
+    top: -100px;
+    background: url("../img/2.png") no-repeat center center;
+    background-size: contain;
+  }
+  &__body{
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  &__wrapper{
+    padding-left: 137px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__img-block{
+    width: 315px;
+    height: 452px;
+    position: relative;
+    margin-right: 50px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__description{
+    width: 360px;
+    height: 411px;
+    p{
+      color: #1b1b1b;
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+  }
+}
