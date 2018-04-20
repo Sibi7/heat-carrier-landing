@@ -1,0 +1,57 @@
+.tara {
+  float: left;
+  width: 100%;
+  position: relative;
+  &__wrap {
+    position: relative;
+    display: flex;
+    padding: 0 80px;
+  }
+  &__left {
+    width: 50%;
+    position: relative;
+  }
+  &__right {
+    width: 50%;
+    position: relative;
+  }
+  &__board {
+    position: absolute;
+    top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 45px 25px 0 25px;
+    box-shadow: 0 0 49px rgba(65, 65, 65, 0.2);
+    background-color: #ffffff;
+  }
+  &__board-item {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    img {
+      width: 170px;
+      height: 100%;
+      object-fit: contain;
+      z-index: 2;
+    }
+  }
+  &__board-desk {
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  &__board-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $latoBlack;
+    text-align: center;
+    width: 250px;
+  }
+}
