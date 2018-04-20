@@ -2,6 +2,7 @@
   float: left;
   width: 100%;
   position: relative;
+  background-color: #efeeee;
   &__wrap {
     position: relative;
     display: flex;
@@ -14,6 +15,80 @@
   &__right {
     width: 50%;
     position: relative;
+    padding: 50px 0 0 50px;
+  }
+  &__right-desk{
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 14px;
+    line-height: 21px;
+    p{
+      color: #1b1b1b;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+    span{
+      color: #e74038;
+      font-weight: 700
+    }
+  }
+  &__form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__form-input{
+    width: 322px;
+    height: 44px;
+    border: 1px solid #e74038;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    color: #1b1b1b;
+    font-size: 14px;
+    background-color: #efeeee;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    transition: 200ms ease;
+    &:focus{
+      transition: 200ms ease;
+      box-shadow: 0 0 5px lighten(#e74038, 20%);
+      border-color: lighten(#e74038, 20%);
+    }
+    &::placeholder{
+      font-family: $latoLight;
+      opacity: 1;
+    }
+
+  }
+  &__form-title{
+    color: #1b1b1b;
+    font-family: $latoBlack;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 21px;
+    width: 367px;
+    margin-bottom: 30px;
+  }
+  &__right-title{
+    font-family: $latoBlack;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  &__form-label{
+    color: #656565;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
   }
   &__board {
     position: absolute;
@@ -23,6 +98,7 @@
     justify-content: center;
     width: 100%;
     padding: 45px 25px 0 25px;
+    height: 701px;
     box-shadow: 0 0 49px rgba(65, 65, 65, 0.2);
     background-color: #ffffff;
   }
@@ -53,5 +129,17 @@
     font-family: $latoBlack;
     text-align: center;
     width: 250px;
+  }
+  &__form-desk{
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 0 115px;
+    color: #1b1b1b;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .feedback-btn{
+    padding: 12px 35px;
   }
 }
