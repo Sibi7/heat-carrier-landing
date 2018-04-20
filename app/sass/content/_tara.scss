@@ -3,7 +3,6 @@
   width: 100%;
   position: relative;
   background-color: #efeeee;
-  overflow: hidden;
   &__wrap {
     position: relative;
     display: flex;
@@ -180,6 +179,13 @@
   .feedback-btn{
     padding: 12px 35px;
   }
+}
+.delivery{
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: #efeeee;
+  overflow-x: hidden;
 }
 .width-55{
   width: 55%;
