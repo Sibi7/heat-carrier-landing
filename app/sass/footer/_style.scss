@@ -2,6 +2,16 @@
   position: relative;
   float: left;
   width: 100%;
+  &__input {
+    width: 100%;
+    max-width: 310px;
+    display: inline-block;
+    height: 44px;
+    border: 1px solid #e74038;
+    background: transparent;
+    padding: 0 25px;
+    margin-bottom: 20px;
+  }
   &__lvl-1{
     float: left;
     width: 100%;
@@ -12,22 +22,23 @@
     float: left;
     width: 100%;
     background-color: #ffffff;
+    display: flex;
   }
-  &__form{
+  &__form {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    input{
-      width: 48.5%;
-      display: inline-block;
-      height: 44px;
-      border: 1px solid #e74038;
-      background: transparent;
-      padding: 0 25px;
-      margin-bottom: 20px;
+    .footer__input {
+      margin-right: 20px;
+    }
+    .feedback-btn {
+      min-width: 200px;
+      margin-left: 40px;
+    }
+    [type="checkbox"] {
+      margin: 10px 0 0 45px;
     }
     label{
-
       width: 50%;
     }
   }
@@ -53,13 +64,58 @@
     line-height: 21px;
   }
   &__document-absolute{
+    left: 40px;
+    top: -140px;
     position: absolute;
     width: 307px;
     height: 425px;
     img{
+      position: relative;
+      z-index: 1;
       width: 100%;
       height: auto;
     }
+  }
+  &__logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: #b51e17;
+  }
+  &__contacts {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__contacts-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__lvl-2-img {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+  }
+  &__lvl-2-wrap {
+    margin-left: 80px;
+    padding: 30px 0;
+    max-width: 580px;
+    width: 100%;
+  }
+  &__lvl-2__form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    .footer__input {
+      margin: 0;
+    }
+  }
+  &__sitex-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
 }
