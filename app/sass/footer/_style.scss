@@ -2,6 +2,7 @@
   position: relative;
   float: left;
   width: 100%;
+  overflow: hidden;
   &__input {
     width: 100%;
     max-width: 310px;
