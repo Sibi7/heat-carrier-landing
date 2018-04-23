@@ -45,6 +45,10 @@
     z-index: 1;
     margin-left: 30px;
     box-sizing: border-box;
+    img{
+      width: 100%;
+      height: auto;
+    }
     &:after{
       content: '';
       position: absolute;
@@ -75,4 +79,34 @@
       color: #e74038;
     }
   }
+  .owl-nav {
+    position: absolute;
+    top: -33px;
+    right: 50px;
+    width: 100px;
+    .fa{
+      font-size: 30px;
+    }
+  }
+  .owl-next{
+    color: transparent !important;
+    background: url("../img/icons/right.png") no-repeat !important;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 0;
+    outline: none;
+  }
+  .owl-prev{
+    color: transparent !important;
+    background: url("../img/icons/left.png") no-repeat !important;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    outline: none;
+  }
+
 }

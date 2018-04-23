@@ -1,19 +1,18 @@
 $(document).ready(function () {
-    //
-    // $('.clients__slider-container').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: false,
-    //     fade: true,
-    //     asNavFor: '.clients__slider-nav'
-    // });
-    // $('.clients__slider-nav').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.clients__slider-container',
-    //     dots: false,
-    //     centerMode: true,
-    //     focusOnSelect: true
-    // });
-
+    $('.clients__slider-container').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
 });
