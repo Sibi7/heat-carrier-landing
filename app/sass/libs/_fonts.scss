@@ -6,8 +6,15 @@ $latoMedium: 'Lato-Medium';
 $latoLight: 'Lato-Light';
 $ProxNExBold: 'proxima-nova-extrabold';
 $ProxBold: 'proxima-nova-bold';
+$Qanelas-heavy: 'qanelas-heavy';
 
 
+@font-face {
+  font-family: 'qanelas-heavy';
+  src: url('../fonts/qanelas-heavy/qanelas-heavy.woff') format('woff'),
+  url('../fonts/qanelas-heavy/qanelas-heavy.woff2') format('woff2');
+  font-weight: normal;
+}
 @font-face {
   font-family: 'proxima-nova-bold';
   src: url('../fonts/proxima-nova/ProximaNovaBold.woff') format('woff'),

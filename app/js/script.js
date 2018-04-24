@@ -40,4 +40,13 @@ $(document).ready(function () {
         });
     });
 
+//    lightbox
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'positionFromTop': false,
+        'fitImagesInViewport':true,
+        'disableScrolling': true
+    })
+
 });

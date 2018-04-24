@@ -88,6 +88,7 @@
       span {
         color: #e74038;
         display: inline-block;
+        font-size: 18px;
       }
     }
     .feedback-btn {
@@ -105,7 +106,7 @@
   }
   .about__table tfoot tr td {
     width: 20%;
-    padding: 20px 10px;
+    padding: 16px 10px;
   }
   .about__table tfoot {
     .text-left {
@@ -117,6 +118,12 @@
   }
   .text-left {
     padding-left: 20px;
+  }
+  .box-shadow{
+    position: relative;
+    &:before{
+      height: 857px;
+    }
   }
 }
 

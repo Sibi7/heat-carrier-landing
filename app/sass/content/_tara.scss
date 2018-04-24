@@ -42,7 +42,7 @@
   }
   &__form-input{
     width: 322px;
-    height: 44px;
+    height: 40px;
     border: 1px solid #e74038;
     margin-bottom: 10px;
     padding: 0 30px;
@@ -186,6 +186,9 @@
   position: relative;
   background-color: #efeeee;
   overflow-x: hidden;
+  .feedback-btn{
+    padding: 12px 60px;
+  }
 }
 .width-55{
   width: 55%;

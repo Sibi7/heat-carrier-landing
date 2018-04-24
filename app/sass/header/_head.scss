@@ -93,6 +93,9 @@
     float: left;
     margin-top: 60px;
     width: 100%;
+    @include breakpoint(max-width 1200px){
+      padding-left: 0;
+    }
     @include breakpoint(max-width 660px){
       margin-top: 10px;
     }
@@ -206,6 +209,24 @@
     right: -140px;
     background: url("../img/1.png") no-repeat center right;
     background-size: contain;
+    @include breakpoint(max-width 1440px){
+      right: -65px;
+    }
+    @include breakpoint(max-width 1300px){
+      right: -40px;
+    }
+    @include breakpoint(max-width 1200px){
+      right: 0;
+      width: 72%;
+      height: 100%;
+      position: absolute;
+      bottom: -81px;
+    }
+    @include breakpoint(max-width 992px){
+      width: 70%;
+      bottom: inherit;
+
+    }
     @include breakpoint(max-width 660px){
       display: none;
     }
