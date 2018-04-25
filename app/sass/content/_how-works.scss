@@ -8,6 +8,9 @@
     float: left;
     background-color: #efeeee;
     padding: 35px 0;
+    @include breakpoint(max-width 660px){
+      margin-top: 30px;
+    }
   }
   &__wrap{
     display: block;
@@ -36,6 +39,10 @@
     font-family: $latoBlack;
     font-size: 18px;
     text-transform: uppercase;
+    @include breakpoint(max-width 660px){
+      font-size: 17px;
+      text-align: center;
+    }
   }
   &__absolute{
     position: absolute;
@@ -67,6 +74,9 @@
       padding-left: 0;
       padding-bottom: 0;
     }
+    @include breakpoint(max-width 660px){
+      padding-top: 0;
+    }
   }
   &__img-block{
     width: 315px;
@@ -85,7 +95,7 @@
     }
   }
   &__description{
-    width: 360px;
+    width: 400px;
     height: 411px;
     @include breakpoint(max-width 992px){
       height: auto;

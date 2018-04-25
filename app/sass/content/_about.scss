@@ -52,7 +52,7 @@
     box-shadow: 0 0 49px rgba(65, 65, 65, 0.31);
     border-radius: 10px 10px 10px 10px;
     @include breakpoint(max-width 660px){
-      display: none;
+
     }
     thead {
       line-height: 45px;
@@ -91,6 +91,9 @@
           color: #1b1b1b;
           font-size: 14px;
           line-height: 17px;
+          @include breakpoint(max-width 660px){
+            padding: 20px;
+          }
         }
       }
     }
@@ -108,6 +111,9 @@
           width: 33.33%;
           vertical-align: top;
           padding: 20px 50px;
+          @include breakpoint(max-width 660px){
+            padding: 20px;
+          }
 
         }
       }
@@ -182,7 +188,13 @@
     width: 100%;
     top: 0;
     left: 0;
-
     box-shadow: 0 0 49px rgba(65, 65, 65, 0.2);
+    @include breakpoint(max-width 660px){
+      height: 872px;
+    }
   }
+}
+.table-wrapper{
+  width: 100%;
+  overflow-x: scroll;
 }
