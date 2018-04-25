@@ -196,5 +196,7 @@
 }
 .table-wrapper{
   width: 100%;
-  overflow-x: scroll;
+  @include breakpoint(max-width 992px){
+    overflow-x: scroll;
+  }
 }

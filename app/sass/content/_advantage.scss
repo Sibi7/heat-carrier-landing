@@ -10,7 +10,7 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 50px;
-    @include breakpoint(max-width 992px){
+    @include breakpoint(max-width 992px) {
       margin-bottom: 30px;
     }
   }
@@ -19,6 +19,9 @@
     float: left;
     width: 100%;
     margin-top: 50px;
+    @include breakpoint(max-width 992px) {
+      margin-top: 30px;
+    }
   }
   &__warning {
     width: 216px;
@@ -39,6 +42,10 @@
     font-weight: 900;
     text-transform: uppercase;
     width: 315px;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__img-absolute {
     position: absolute;
@@ -47,6 +54,9 @@
     background: url("../img/5.png") no-repeat bottom center;
     background-size: contain;
     top: -102px;
+    @include breakpoint(max-width 660px) {
+      display: none;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -63,9 +73,16 @@
     float: right;
     position: relative;
     padding-left: 25px;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+      padding-left: 0;
+    }
     p {
       margin-top: 0;
       margin-bottom: 30px;
+      @include breakpoint(max-width 660px) {
+        margin-bottom: 10px;
+      }
       span {
         display: block;
         color: #1b1b1b;
@@ -80,6 +97,17 @@
     width: 411px;
     margin-top: 15px;
     margin-bottom: 55px;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+      float: left;
+      margin-bottom: 30px;
+    }
+    .feedback-btn{
+      @include breakpoint(max-width 660px){
+        margin: 0 auto;
+        display: block;
+      }
+    }
     p {
       color: #1b1b1b;
       margin: 0 0 21px 0;
@@ -88,6 +116,9 @@
       font-weight: 400;
       line-height: 21px;
       text-transform: uppercase;
+      @include breakpoint(max-width 660px){
+        text-align: center;
+      }
       span {
         color: #e74038;
         display: inline-block;
@@ -100,7 +131,7 @@
   }
   .about__table {
     width: 100%;
-    @include breakpoint(max-width 992px){
+    @include breakpoint(max-width 992px) {
       width: 1425px;
     }
   }
@@ -125,11 +156,11 @@
   .text-left {
     padding-left: 20px;
   }
-  .box-shadow{
+  .box-shadow {
     position: relative;
-    &:before{
+    &:before {
       height: 857px;
-      @include breakpoint(max-width 992px){
+      @include breakpoint(max-width 992px) {
 
       }
     }

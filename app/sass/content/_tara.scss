@@ -7,15 +7,29 @@
     position: relative;
     display: flex;
     padding: 0 80px;
+    @include breakpoint(max-width 992px){
+      flex-wrap: wrap;
+      padding: 0;
+      width: 100%;
+    }
   }
   &__left {
     width: 50%;
     position: relative;
+    @include breakpoint(max-width 660px){
+      width: 100%;
+      margin-top: 10px
+    }
   }
   &__right {
     width: 50%;
     position: relative;
     padding: 50px 0 0 50px;
+    @include breakpoint(max-width 660px){
+      padding: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
   }
   &__right-desk{
     width: 100%;
@@ -80,6 +94,9 @@
     margin-bottom: 30px;
     font-weight: 900;
     text-transform: uppercase;
+    @include breakpoint(max-width 660px){
+      text-align: center;
+    }
   }
   &__form-label{
     color: #656565;
@@ -101,18 +118,30 @@
     height: 701px;
     box-shadow: 0 0 49px rgba(65, 65, 65, 0.2);
     background-color: #ffffff;
+    @include breakpoint(max-width 660px){
+      position: relative;
+      top: 0;
+      padding: 20px;
+      align-items: center;
+    }
   }
   &__board-item {
     width: 50%;
     text-align: center;
     position: relative;
     margin-bottom: 40px;
+    @include breakpoint(max-width 660px){
+      margin-bottom: 0;
+    }
     img {
       width: 170px;
       height: 100%;
       object-fit: contain;
       z-index: 2;
       display: inline-block;
+      @include breakpoint(max-width 660px){
+        width: 120px;
+      }
     }
   }
   &__board-desk {
@@ -121,6 +150,9 @@
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 40px;
+    @include breakpoint(max-width 660px){
+      margin-bottom: 0;
+    }
   }
   &__board-title {
     margin-top: 0;
@@ -130,6 +162,9 @@
     font-family: $latoBlack;
     text-align: center;
     width: 250px;
+    @include breakpoint(max-width 660px){
+      margin-bottom: 0;
+    }
   }
   &__form-desk{
     margin-top: 15px;
@@ -140,17 +175,28 @@
     font-size: 12px;
     line-height: 15px;
     margin-bottom: 50px;
+    @include breakpoint(max-width 992px){
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
   }
   &__icons{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint(max-width 660px){
+      justify-content: center;
+    }
   }
   &__icon-item{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-
+    @include breakpoint(max-width 660px){
+      margin-bottom: 20px;
+    }
     img{
       display: inline-block;
       width: 51px;
@@ -175,6 +221,9 @@
     background-size: contain;
     bottom: 0;
     right: 0;
+    @include breakpoint(max-width 660px){
+      display: none;
+    }
   }
   .feedback-btn{
     padding: 10px 35px;
@@ -192,7 +241,13 @@
 }
 .width-55{
   width: 57%;
+  @include breakpoint(max-width 660px){
+    width: 100%;
+  }
 }
 .width-35{
   width: 35%;
+  @include breakpoint(max-width 660px){
+    width: 100%;
+  }
 }

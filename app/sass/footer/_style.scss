@@ -1,4 +1,4 @@
-.footer{
+.footer {
   position: relative;
   float: left;
   width: 100%;
@@ -11,14 +11,18 @@
     background: transparent;
     padding: 0 25px;
     margin-bottom: 20px;
+
   }
-  &__lvl-1{
+  &__lvl-1 {
     float: left;
     width: 100%;
     background-color: #efeeee;
     padding: 50px;
+    @include breakpoint(max-width 660px) {
+      padding: 0;
+    }
   }
-  &__lvl-2{
+  &__lvl-2 {
     float: left;
     width: 100%;
     background-color: #ffffff;
@@ -31,7 +35,10 @@
     .footer__input {
       margin-right: 20px;
       transition: 200ms ease;
-      &:focus{
+      @include breakpoint(max-width 660px){
+        margin-right: 0;
+      }
+      &:focus {
         transition: 200ms ease;
         box-shadow: 0 0 5px lighten(#e74038, 20%);
         border-color: lighten(#e74038, 20%);
@@ -40,45 +47,75 @@
     .feedback-btn {
       min-width: 200px;
       margin-left: 40px;
+      @include breakpoint(max-width 660px){
+        display: block;
+        margin: 0 auto;
+      }
     }
     [type="checkbox"] {
       margin: 10px 0 0 45px;
     }
-    label{
+    label {
       width: 50%;
       color: #656565;
       font-size: 13px;
       font-family: $latoLight;
+      @include breakpoint(max-width 660px){
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
   }
-  &__document{
+  &__document {
     width: 470px;
     float: left;
     position: relative;
+    @include breakpoint(max-width 660px){
+      width: 100%;
+    }
   }
-  &__right-form{
+  &__right-form {
     float: right;
     width: calc(100% - 470px);
+    @include breakpoint(max-width 660px){
+      width: 100%;
+      float: left;
+    }
   }
-  &__form-title{
+  &__form-title {
     font-family: $latoBlack;
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
+    @include breakpoint(max-width 660px){
+      margin-top: 0;
+      text-align: center;
+    }
   }
-  &__form-desk{
+  &__form-desk {
     color: #1b1b1b;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+    @include breakpoint(max-width 660px){
+      text-align: center;
+      width: 100%;
+    }
   }
-  &__document-absolute{
+  &__document-absolute {
     left: 40px;
     top: -140px;
     position: absolute;
     width: 307px;
     height: 425px;
-    img{
+    @include breakpoint(max-width 660px){
+      left: inherit;
+      top: inherit;
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+    img {
       position: relative;
       z-index: 1;
       width: 100%;
@@ -97,33 +134,56 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint(max-width 660px){
+      margin-top: 0;
+        }
   }
   &__contacts-block {
     display: flex;
     flex-direction: column;
+    @include breakpoint(max-width 660px){
+      margin: 10px 0;
+      width: 100%;
+      align-items: center;
+
+    }
   }
 
   &__lvl-2-img {
     position: absolute;
     bottom: 0;
     right: -100px;
+    @include breakpoint(max-width 660px){
+      display: none;
+    }
   }
   &__lvl-2-wrap {
     margin-left: 80px;
     padding: 30px 0;
     max-width: 580px;
     width: 100%;
+    @include breakpoint(max-width 660px){
+      margin-left: 0;
+    }
   }
   &__lvl-2__form {
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-between;
+    @include breakpoint(max-width 660px){
+     flex-wrap: wrap;
+      justify-content: center;
+    }
     .footer__input {
       margin: 0;
       transition: 200ms ease;
+      @include breakpoint(max-width 660px){
+        margin-bottom: 10px;
+      }
 
-      &:focus{
+      &:focus {
         transition: 200ms ease;
         box-shadow: 0 0 5px lighten(#e74038, 20%);
         border-color: lighten(#e74038, 20%);

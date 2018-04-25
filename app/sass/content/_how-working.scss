@@ -1,18 +1,26 @@
-.how-working{
+.how-working {
   overflow: hidden;
   position: relative;
   float: left;
   width: 100%;
   padding: 65px 0 45px 0;
   background-color: #e74038;
-  &__wrap{
+  @include breakpoint(max-width 660px) {
+    padding: 30px 0;
+  }
+  &__wrap {
     max-width: 810px;
     width: 100%;
     float: right;
     position: relative;
     margin-right: 60px;
+    @include breakpoint(max-width 660px) {
+      max-width: 100%;
+      float: left;
+      margin-right: 0;
+    }
   }
-  &__title{
+  &__title {
     font-family: $latoBlack;
     font-size: 18px;
     font-weight: 900;
@@ -20,8 +28,11 @@
     color: #fff;
     margin-bottom: 30px;
     margin-top: 0;
+    @include breakpoint(max-width 660px) {
+      text-align: center;
+    }
   }
-  &__desc{
+  &__desc {
     max-width: 740px;
     width: 100%;
     float: left;
@@ -30,32 +41,52 @@
     color: #fff;
     margin-bottom: 40px;
   }
-  &__left{
+  &__left {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 591px;
     float: left;
     margin-bottom: 65px;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    @include breakpoint(max-width 500px){
+      width: 100%;
+    }
   }
-  &__right{
+  &__right {
     width: 591px;
+    flex-wrap: wrap;
     float: right;
     display: flex;
     justify-content: space-between;
+    @include breakpoint(max-width 660px) {
+      width: 100%;
+    }
   }
-  &__item{
+  &__item {
     display: flex;
     width: 160px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     position: relative;
-    span{
+    @include breakpoint(max-width 500px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    span {
       color: #ffffff;
       font-size: 14px;
       line-height: 21px;
+      @include breakpoint(max-width 500px) {
+        width: 160px;
+        display: inline-block;
+      }
     }
-    a{
+    a {
       color: #ffffff;
       font-family: $latoBlack;
       font-size: 14px;
@@ -63,7 +94,7 @@
       text-decoration: underline;
       text-transform: uppercase;
     }
-    img{
+    img {
       width: 51px;
       display: inline-block;
       margin-bottom: 10px;
@@ -71,7 +102,7 @@
       object-fit: contain;
     }
   }
-  &__absolute{
+  &__absolute {
     position: absolute;
     left: 40px;
     top: -100px;
@@ -82,7 +113,7 @@
     line-height: 21px;
     text-transform: uppercase;
   }
-  &__number{
+  &__number {
     position: absolute;
     opacity: 0.1;
     top: 60px;
