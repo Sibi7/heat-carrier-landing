@@ -36,6 +36,7 @@
     color: #1b1b1b;
     font-size: 14px;
     line-height: 21px;
+    text-align: justify;
     p{
       color: #1b1b1b;
       font-size: 14px;
@@ -150,6 +151,7 @@
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 40px;
+    text-align: justify;
     @include breakpoint(max-width 660px){
       margin-bottom: 0;
     }

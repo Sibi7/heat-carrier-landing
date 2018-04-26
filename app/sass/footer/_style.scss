@@ -32,6 +32,9 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint(max-width 660px){
+    justify-content: center;
+    }
     .footer__input {
       margin-right: 20px;
       transition: 200ms ease;
@@ -190,10 +193,18 @@
       }
     }
   }
+  &__lvl-2__desc{
+    @include breakpoint(max-width 660px){
+      text-align: justify;
+    }
+  }
   &__sitex-img {
     position: absolute;
     bottom: 0;
     left: 0;
+    @include breakpoint(max-width 660px){
+      display: none;
+    }
   }
 
 }

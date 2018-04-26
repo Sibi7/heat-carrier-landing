@@ -29,6 +29,7 @@
     line-height: 21px;
     @include breakpoint(max-width 992px){
       width: 100%;
+      text-align: justify;
     }
 
   }
@@ -102,7 +103,7 @@
     }
     @include breakpoint(max-width 660px){
      width: 100%;
-      text-align: center;
+      text-align: justify;
     }
     p{
       color: #1b1b1b;

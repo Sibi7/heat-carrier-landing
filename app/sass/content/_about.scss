@@ -24,6 +24,9 @@
     font-size: 14px;
     line-height: 21px;
     margin-top: 0;
+    @include breakpoint(max-width 660px){
+     text-align: justify;
+    }
     span {
       display: block;
       font-family: $latoBlack;
