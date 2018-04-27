@@ -42,7 +42,7 @@
     font-weight: 900;
     text-transform: uppercase;
     width: 315px;
-    @include breakpoint(max-width 660px) {
+    @include breakpoint(max-width 992px) {
       width: 100%;
       text-align: center;
     }
@@ -54,7 +54,7 @@
     background: url("../img/5.png") no-repeat bottom center;
     background-size: contain;
     top: -102px;
-    @include breakpoint(max-width 660px) {
+    @include breakpoint(max-width 992px) {
       display: none;
     }
     img {
@@ -73,14 +73,14 @@
     float: right;
     position: relative;
     padding-left: 25px;
-    @include breakpoint(max-width 660px) {
+    @include breakpoint(max-width 992px) {
       width: 100%;
       padding-left: 0;
     }
     p {
       margin-top: 0;
       margin-bottom: 30px;
-      @include breakpoint(max-width 660px) {
+      @include breakpoint(max-width 992px) {
         margin-bottom: 10px;
         text-align: justify;
       }
@@ -98,6 +98,12 @@
     width: 411px;
     margin-top: 15px;
     margin-bottom: 55px;
+    @include breakpoint(max-width 992px) {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      text-align: center;
+    }
     @include breakpoint(max-width 660px) {
       width: 100%;
       float: left;
@@ -162,7 +168,10 @@
     &:before {
       height: 857px;
       @include breakpoint(max-width 992px) {
-
+        height: 750px;
+      }
+      @include breakpoint(max-width 660px) {
+        height: 857px;
       }
     }
   }

@@ -11,14 +11,13 @@
     background: transparent;
     padding: 0 25px;
     margin-bottom: 20px;
-
   }
   &__lvl-1 {
     float: left;
     width: 100%;
     background-color: #efeeee;
     padding: 50px;
-    @include breakpoint(max-width 660px) {
+    @include breakpoint(max-width 992px) {
       padding: 0;
     }
   }
@@ -32,13 +31,13 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    @include breakpoint(max-width 660px){
-    justify-content: center;
+    @include breakpoint(max-width 992px) {
+      justify-content: center;
     }
     .footer__input {
       margin-right: 20px;
       transition: 200ms ease;
-      @include breakpoint(max-width 660px){
+      @include breakpoint(max-width 660px) {
         margin-right: 0;
       }
       &:focus {
@@ -50,22 +49,26 @@
     .feedback-btn {
       min-width: 200px;
       margin-left: 40px;
-      @include breakpoint(max-width 660px){
+      @include breakpoint(max-width 992px) {
         display: block;
         margin: 0 auto;
       }
     }
     [type="checkbox"] {
       margin: 10px 0 0 45px;
+      @include breakpoint(max-width 992px) {
+        margin: 0;
+      }
     }
     label {
       width: 50%;
       color: #656565;
       font-size: 13px;
       font-family: $latoLight;
-      @include breakpoint(max-width 660px){
+      @include breakpoint(max-width 992px) {
         width: 100%;
         margin-bottom: 20px;
+        text-align: center;
       }
     }
   }
@@ -73,14 +76,14 @@
     width: 470px;
     float: left;
     position: relative;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 992px) {
       width: 100%;
     }
   }
   &__right-form {
     float: right;
     width: calc(100% - 470px);
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 992px) {
       width: 100%;
       float: left;
     }
@@ -90,7 +93,7 @@
     font-size: 18px;
     font-weight: 900;
     text-transform: uppercase;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 992px) {
       margin-top: 0;
       text-align: center;
     }
@@ -100,7 +103,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 992px) {
       text-align: center;
       width: 100%;
     }
@@ -111,7 +114,7 @@
     position: absolute;
     width: 307px;
     height: 425px;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 992px) {
       left: inherit;
       top: inherit;
       position: relative;
@@ -138,14 +141,14 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 660px) {
       margin-top: 0;
-        }
+    }
   }
   &__contacts-block {
     display: flex;
     flex-direction: column;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 660px) {
       margin: 10px 0;
       width: 100%;
       align-items: center;
@@ -157,7 +160,10 @@
     position: absolute;
     bottom: 0;
     right: -100px;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 1300px) {
+      right: 0;
+    }
+    @include breakpoint(max-width 992px) {
       display: none;
     }
   }
@@ -166,7 +172,7 @@
     padding: 30px 0;
     max-width: 580px;
     width: 100%;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 660px) {
       margin-left: 0;
     }
   }
@@ -175,14 +181,14 @@
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    @include breakpoint(max-width 660px){
-     flex-wrap: wrap;
+    @include breakpoint(max-width 660px) {
+      flex-wrap: wrap;
       justify-content: center;
     }
     .footer__input {
       margin: 0;
       transition: 200ms ease;
-      @include breakpoint(max-width 660px){
+      @include breakpoint(max-width 660px) {
         margin-bottom: 10px;
       }
 
@@ -193,8 +199,8 @@
       }
     }
   }
-  &__lvl-2__desc{
-    @include breakpoint(max-width 660px){
+  &__lvl-2__desc {
+    @include breakpoint(max-width 660px) {
       text-align: justify;
     }
   }
@@ -202,9 +208,54 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    @include breakpoint(max-width 660px){
+    @include breakpoint(max-width 660px) {
       display: none;
     }
   }
 
+}
+
+.modal_div {
+  width: 520px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 40px;
+  box-shadow: 3px 4px 40px rgba(29, 29, 29, 0.15);
+  background-color: #ffffff;
+  align-items: center;
+  @include breakpoint(max-width 660px){
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+.modal_div .modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
 }

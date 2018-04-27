@@ -25,6 +25,9 @@
     width: 50%;
     position: relative;
     padding: 50px 0 0 50px;
+    @include breakpoint(max-width 992px){
+      padding: 15px;
+    }
     @include breakpoint(max-width 660px){
       padding: 0;
       width: 100%;
@@ -67,6 +70,7 @@
     font-weight: 500;
     letter-spacing: 1.35px;
     transition: 200ms ease;
+
     &:focus{
       transition: 200ms ease;
       box-shadow: 0 0 5px lighten(#e74038, 20%);
@@ -240,15 +244,37 @@
   .feedback-btn{
     padding: 10px 60px;
   }
+  .tara__form-title{
+    @include breakpoint(max-width 992px){
+      width: 100%;
+    }
+    @include breakpoint(max-width 660px){
+      width: 367px;
+    }
+  }
+  .tara__form-input{
+    @include breakpoint(max-width 992px){
+      width: 51%;
+    }
+    @include breakpoint(max-width 660px){
+      width: 367px;
+    }
+  }
 }
 .width-55{
   width: 57%;
-  @include breakpoint(max-width 660px){
+  @include breakpoint(max-width 992px){
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .width-35{
   width: 35%;
+  @include breakpoint(max-width 992px){
+   display: none;
+  }
   @include breakpoint(max-width 660px){
     width: 100%;
   }
